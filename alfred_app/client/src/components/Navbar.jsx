@@ -5,10 +5,10 @@ import { useDispatch } from 'react-redux';
 import { setMode } from 'state';
 import { AppBar, IconButton, InputBase, Menu, Toolbar, useTheme } from '@mui/material';
 
-const Navbar = (
+const Navbar = ({
     isSidebarOpen,
     setIsSidebarOpen,
-) => {
+}) => {
     const dispatch = useDispatch();
     const theme = useTheme();
   return (
